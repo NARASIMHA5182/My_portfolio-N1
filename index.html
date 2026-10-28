@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Koduri Venkata Narasimha Reddy - 3rd-year CSE student, Python enthusiast, future AI engineer, and Stage 2 ATF 2025 qualifier. Explore my neon cyberpunk AI lab.">
+  <meta name="keywords" content="Koduri Venkata Narasimha Reddy, Portfolio, CSE, Python, AI Engineer, Machine Learning, DSA, ATF 2025, Web Developer">
+  <meta name="author" content="Koduri Venkata Narasimha Reddy">
+  <meta name="theme-color" content="#031008">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Koduri Venkata Narasimha Reddy | AI Lab & Portfolio">
+  <meta property="og:description" content="Futuristic neon cyberpunk AI lab & portfolio of Koduri Venkata Narasimha Reddy. 3rd-year CSE student, Python enthusiast, and future AI engineer.">
+  <meta property="og:type" content="website">
+
+  <title>Koduri Venkata Narasimha Reddy | Neon AI Lab & Portfolio</title>
+
+  <!-- Inline SVG Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2300f5ff'/%3E%3Cstop offset='100%25' stop-color='%238a2be2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpolygon points='50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5' fill='%23050816' stroke='url(%23g)' stroke-width='6'/%3E%3Ctext x='50' y='60' font-family='monospace' font-size='32' font-weight='900' fill='%2300f5ff' text-anchor='middle'%3EKV%3C/text%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Orbitron for futuristic headings, Inter for body, JetBrains Mono for terminal/code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Orbitron:wght@500;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="green">
+
+  <!-- Reading / Scroll Progress Bar -->
+  <div id="scroll-progress-container" aria-hidden="true">
+    <div id="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Custom Glowing Cursor (Desktop Only) -->
+  <div id="cursor-dot" class="custom-cursor" aria-hidden="true"></div>
+  <div id="cursor-ring" class="custom-cursor" aria-hidden="true"></div>
+
+  <!-- Accessible Skip to Content Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Sticky Translucent Navigation -->
+  <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Go to top of page">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">KVNR</span>
+        <span class="logo-accent">.ai</span>
+        <span class="logo-bracket">/&gt;</span>
+        <span class="status-indicator" title="Status: Active Online"></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#about" class="nav-link" data-section="about">
+              <span class="nav-index">01.</span> About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link" data-section="skills">
+              <span class="nav-index">02.</span> Skills
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link" data-section="projects">
+              <span class="nav-index">03.</span> Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" data-section="contact">
+              <span class="nav-index">04.</span> Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions: Theme Switcher & Mobile Toggle -->
+      <div class="nav-actions">
+        <!-- Theme Switcher Button -->
+        <button id="theme-switcher-btn" class="theme-btn" aria-label="Cycle site color theme" title="Switch Theme (Current: Matrix Green)">
+          <svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+          <span id="theme-btn-label" class="theme-label">Matrix Green</span>
+        </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-menu-btn" class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section" aria-label="Hero Introduction">
+      <!-- Neural Network Canvas Background -->
+      <canvas id="neural-canvas" aria-hidden="true"></canvas>
+
+      <!-- Perspective Synthwave Grid Floor -->
+      <div class="synthwave-grid" aria-hidden="true"></div>
+      <div class="horizon-glow" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <!-- Top Tech Chip -->
+        <div class="hero-chip">
+          <span class="pulse-beacon"></span>
+          <span class="chip-text">AI LAB PROTOCOL // STAGE 2 ATF QUALIFIER</span>
+        </div>
+
+        <!-- Name with CSS Glitch Effect -->
+        <h1 class="hero-name glitch-effect" data-text="KODURI VENKATA NARASIMHA REDDY">
+          KODURI VENKATA NARASIMHA REDDY
+        </h1>
+
+        <!-- Typing Tagline -->
+        <div class="tagline-container" aria-live="polite">
+          <span class="tagline-prefix">&gt;&nbsp;</span>
+          <span id="typed-tagline" class="typed-text"></span>
+          <span class="typing-cursor" aria-hidden="true">|</span>
+        </div>
+
+        <!-- Quick Summary Lead -->
+        <p class="hero-subtext">
+          Engineering the next era of intelligent algorithms, robust software architectures, and automated intelligence. Bridging competitive problem solving with neural systems.
+        </p>
+
+        <!-- Hero CTAs -->
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span class="btn-text">Explore Projects</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+
+          <button type="button" class="btn btn-secondary open-resume-modal-btn" id="hero-view-resume-btn" aria-label="Open Interactive Resume Modal">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span class="btn-text">View Full Resume</span>
+          </button>
+
+          <a href="resume.pdf" download="KVNR_Resume.pdf" class="btn btn-outline" id="resume-download-btn">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span class="btn-text">Download PDF</span>
+          </a>
+        </div>
+
+        <!-- Interactive AI Orb Hero Trigger -->
+        <div class="ai-orb-wrapper" id="hero-orb-container">
+          <button id="hero-ai-orb" class="ai-orb-button" aria-label="Wake the interactive AI Terminal" title="Click to wake up the AI Terminal!">
+            <div class="orb-core">
+              <div class="orb-glow-inner"></div>
+              <div class="orb-ring ring-1"></div>
+              <div class="orb-ring ring-2"></div>
+              <div class="orb-ring ring-3"></div>
+              <span class="orb-icon" aria-hidden="true">🤖</span>
+            </div>
+            <div class="orb-meta">
+              <span class="orb-prompt">👋 Wake the AI — click me</span>
+              <span class="orb-hint">Launch Neural CLI [Press ~ or Click]</span>
+            </div>
+          </button>
+        </div>
+
+        <!-- Hero Stats Row with Animated Counters -->
+        <div class="hero-stats-grid">
+          <div class="stat-card">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="3">0</span>
+              <span class="stat-plus">+</span>
+            </div>
+            <span class="stat-label">Core Systems Built</span>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="10">0</span>
+              <span class="stat-plus">+</span>
+            </div>
+            <span class="stat-label">Tech Superpowers</span>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="2">0</span>
+              <span class="stat-badge">STAGE</span>
+            </div>
+            <span class="stat-label">ATF Exam Qualifier</span>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="100">0</span>
+              <span class="stat-plus">%</span>
+            </div>
+            <span class="stat-label">Problem Solving Passion</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll to About section">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+        <span class="scroll-text">SCROLL DOWN</span>
+      </a>
+    </section>
+
+    <!-- MOVING TECH MARQUEE STRIP -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item">PYTHON</span>
+        <span class="marquee-separator">✦</span>
+        <span class="marquee-item">DATA STRUCTURES & ALGORITHMS</span>
+        <span class="marquee-separator">✦</span>
+        <span class="marquee-item">AI & MACHINE LEARNING</span>
+        <span class="marquee-separator">✦</span>
+        <span class="marquee-item">STREAMLIT</span>
+        <span class="marquee-separator">✦</span>
+        <span class="marquee-item">SQLITE & MYSQL</span>
+        <span class="marquee-separator">✦</span>
+        <span class="marquee-item">ATF COMPETITIVE CODING</span>
+        <span class="marquee-separator">✦</span>
+        <span class="marquee-item">NEURAL NETWORKS</span>
+        <span class="marquee-separator">✦</span>
+        <span class="marquee-item">SYSTEM DESIGN</span>
+        <span class="marquee-separator">✦</span>
+        <span class="marquee-item">FULL STACK WEB</span>
+        <span class="marquee-separator">✦</span>
+        <!-- Duplicate for seamless continuous loop -->
+        <span class="marquee-item">PYTHON</span>
+        <span class="marquee-separator">✦</span>
+        <span class="marquee-item">DATA STRUCTURES & ALGORITHMS</span>
+        <span class="marquee-separator">✦</span>
+        <span class="marquee-item">AI & MACHINE LEARNING</span>
+        <span class="marquee-separator">✦</span>
+        <span class="marquee-item">STREAMLIT</span>
+        <span class="marquee-separator">✦</span>
+        <span class="marquee-item">SQLITE & MYSQL</span>
+        <span class="marquee-separator">✦</span>
+        <span class="marquee-item">ATF COMPETITIVE CODING</span>
+        <span class="marquee-separator">✦</span>
+        <span class="marquee-item">NEURAL NETWORKS</span>
+        <span class="marquee-separator">✦</span>
+        <span class="marquee-item">SYSTEM DESIGN</span>
+        <span class="marquee-separator">✦</span>
+        <span class="marquee-item">FULL STACK WEB</span>
+        <span class="marquee-separator">✦</span>
+      </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section" aria-labelledby="about-heading">
+      <div class="section-container">
+        <div class="section-header scroll-reveal">
+          <div class="section-tag">
+            <span class="tag-bracket">&lt;</span>01 // DISCOVER<span class="tag-bracket">&gt;</span>
+          </div>
+          <h2 id="about-heading" class="section-title">ABOUT ME</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Holographic Profile Visual Card -->
+          <div class="about-visual-col scroll-reveal">
+            <div class="cyber-profile-card">
+              <div class="profile-card-header">
+                <span class="terminal-dot dot-red"></span>
+                <span class="terminal-dot dot-yellow"></span>
+                <span class="terminal-dot dot-green"></span>
+                <span class="card-id-label">OPERATOR // ID-5182</span>
+              </div>
+              
+              <div class="avatar-display">
+                <!-- Cyberpunk Hologram Avatar (Pure SVG) -->
+                <svg class="hologram-avatar" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Cyberpunk AI Lab Operator Avatar">
+                  <defs>
+                    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="var(--accent-cyan)"/>
+                      <stop offset="50%" stop-color="var(--accent-purple)"/>
+                      <stop offset="100%" stop-color="var(--accent-pink)"/>
+                    </linearGradient>
+                    <radialGradient id="avatarGlow" cx="50%" cy="50%" r="50%">
+                      <stop offset="0%" stop-color="var(--accent-cyan)" stop-opacity="0.3"/>
+                      <stop offset="100%" stop-color="transparent"/>
+                    </radialGradient>
+                  </defs>
+                  <!-- Background Glow & Grid -->
+                  <circle cx="100" cy="100" r="85" fill="url(#avatarGlow)" />
+                  <circle cx="100" cy="100" r="85" stroke="var(--accent-cyan)" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.6"/>
+                  <circle cx="100" cy="100" r="95" stroke="var(--accent-purple)" stroke-width="1" stroke-dasharray="12 6" opacity="0.4"/>
+                  
+                  <!-- Tech Head Silhouettes & Cybernetic lines -->
+                  <path d="M70 140 C65 110, 65 75, 100 60 C135 75, 135 110, 130 140 Z" fill="rgba(10, 16, 38, 0.85)" stroke="url(#avatarGrad)" stroke-width="2"/>
+                  <!-- Futuristic Visor -->
+                  <polygon points="75,85 125,85 120,98 80,98" fill="var(--accent-cyan)" opacity="0.85"/>
+                  <line x1="60" y1="91" x2="140" y2="91" stroke="var(--accent-cyan)" stroke-width="1.5" opacity="0.5"/>
+                  <!-- Core Neural Nodes in Head -->
+                  <circle cx="100" cy="72" r="3" fill="var(--accent-pink)"/>
+                  <line x1="100" y1="75" x2="100" y2="85" stroke="var(--accent-pink)" stroke-width="1"/>
+                  <circle cx="90" cy="115" r="2.5" fill="var(--accent-cyan)"/>
+                  <circle cx="110" cy="115" r="2.5" fill="var(--accent-cyan)"/>
+                  <path d="M90 115 L100 122 L110 115" stroke="var(--accent-cyan)" stroke-width="1.5" fill="none"/>
+                  <!-- Shoulders & Tech Armor -->
+                  <path d="M45 185 C45 155, 65 145, 100 145 C135 145, 155 155, 155 185" stroke="url(#avatarGrad)" stroke-width="2.5" fill="none"/>
+                  <line x1="100" y1="145" x2="100" y2="185" stroke="var(--accent-purple)" stroke-width="1.5" stroke-dasharray="4 3"/>
+                  <!-- Coordinate Markers -->
+                  <text x="30" y="35" font-family="'JetBrains Mono', monospace" font-size="8" fill="var(--accent-cyan)" opacity="0.7">X: 2026.CSE</text>
+                  <text x="130" y="35" font-family="'JetBrains Mono', monospace" font-size="8" fill="var(--accent-pink)" opacity="0.7">STATUS: OK</text>
+                </svg>
+              </div>
+
+              <div class="profile-details-list">
+                <div class="detail-row">
+                  <span class="detail-label">CODENAME:</span>
+                  <span class="detail-value text-neon">VENKATA NARASIMHA REDDY KODURI</span>
+                </div>
+                <div class="detail-row">
+                  <span class="detail-label">INSTITUTION:</span>
+                  <span class="detail-value">Seshadri Rao Gudlavalleru Eng. College</span>
+                </div>
+                <div class="detail-row">
+                  <span class="detail-label">DEGREE:</span>
+                  <span class="detail-value">B.Tech, CSE (Expected 2027)</span>
+                </div>
+                <div class="detail-row">
+                  <span class="detail-label">LOCATION:</span>
+                  <span class="detail-value">Gudlavalleru, AP, India</span>
+                </div>
+                <div class="detail-row">
+                  <span class="detail-label">HONOR:</span>
+                  <span class="detail-value highlight-gold">ATF Stage 2 Qualifier (2025)</span>
+                </div>
+                <div class="detail-row">
+                  <span class="detail-label">SYSTEM STATE:</span>
+                  <span class="detail-value status-online">
+                    <span class="mini-pulse"></span> ONLINE & CODING
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bio Content Column -->
+          <div class="about-text-col scroll-reveal">
+            <h3 class="about-greeting">
+              Hello, World! I am <span class="highlight-cyan">Koduri Venkata Narasimha Reddy</span>.
+            </h3>
+
+            <!-- 3-4 friendly sentences based on user bio -->
+            <div class="bio-paragraphs">
+              <p class="bio-text">
+                I am a 3rd-year Computer Science and Engineering student who is deeply passionate about Python, algorithmic problem solving, and intelligent system architectures. Having qualified for <strong>Stage 2 in the prestigious ATF competitive coding exam (2025)</strong>, I relish breaking down difficult computational challenges and finding elegant, optimized solutions.
+              </p>
+              <p class="bio-text">
+                Currently, I am intensely working on advanced Data Structures and Algorithms with Python while engineering end-to-end full stack web platforms and databases. Every project I architect is a deliberate stepping stone towards my vision of becoming an impactful, forward-thinking <strong>AI Engineer</strong>.
+              </p>
+            </div>
+
+            <!-- "Currently learning" Pulse Badge -->
+            <div class="learning-badge-wrapper">
+              <div class="learning-badge">
+                <span class="pulse-ring"></span>
+                <span class="learning-icon">⚡</span>
+                <span class="learning-text">Currently learning: <strong>AI / ML with Python &amp; Neural Frameworks</strong></span>
+              </div>
+            </div>
+
+            <!-- Key Attributes Grid -->
+            <div class="attributes-grid">
+              <div class="attribute-pill">
+                <span class="attr-icon">🧠</span>
+                <div class="attr-info">
+                  <span class="attr-title">Algorithmic Mindset</span>
+                  <span class="attr-desc">DSA in Python with O(N) focus</span>
+                </div>
+              </div>
+
+              <div class="attribute-pill">
+                <span class="attr-icon">🏆</span>
+                <div class="attr-info">
+                  <span class="attr-title">Competitive Edge</span>
+                  <span class="attr-desc">Stage 2 ATF Qualifier 2025</span>
+                </div>
+              </div>
+
+              <div class="attribute-pill">
+                <span class="attr-icon">🛠️</span>
+                <div class="attr-info">
+                  <span class="attr-title">Pragmatic Builder</span>
+                  <span class="attr-desc">Web apps, DBs, and ML models</span>
+                </div>
+              </div>
+
+              <div class="attribute-pill">
+                <span class="attr-icon">🚀</span>
+                <div class="attr-info">
+                  <span class="attr-title">Continuous Evolution</span>
+                  <span class="attr-desc">Pushing towards production AI</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action buttons in bio -->
+            <div class="about-actions">
+              <button type="button" class="btn btn-primary open-resume-modal-btn">
+                <span>📄 View Full Resume</span>
+              </button>
+              <a href="#contact" class="btn btn-outline">
+                <span>Connect With Me</span>
+              </a>
+              <button class="btn btn-terminal open-terminal-btn" aria-label="Open AI Terminal modal">
+                <span class="terminal-btn-icon">&gt;_</span>
+                <span>Open AI Console</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section skills-section" aria-labelledby="skills-heading">
+      <div class="section-container">
+        <div class="section-header scroll-reveal">
+          <div class="section-tag">
+            <span class="tag-bracket">&lt;</span>02 // CAPABILITIES<span class="tag-bracket">&gt;</span>
+          </div>
+          <h2 id="skills-heading" class="section-title">TECH SUPERPOWERS</h2>
+          <p class="section-subtitle">
+            Grounded, verified skill proficiencies evaluated on real-world projects and rigorous coding benchmarks.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Group 1: Core Technologies -->
+        <div class="skill-category-group scroll-reveal">
+          <div class="category-header">
+            <span class="category-indicator"></span>
+            <h3 class="category-title">01. Core Foundations &amp; Algorithms</h3>
+          </div>
+          <div class="power-cards-grid">
+
+            <!-- Python -->
+            <div class="power-card" data-level="88">
+              <div class="card-glow-bg"></div>
+              <div class="card-top">
+                <div class="skill-icon-box">
+                  <!-- Python SVG -->
+                  <svg viewBox="0 0 24 24" class="skill-svg" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2C7.5 2 7.5 4 7.5 4v3h4.5v1.5H5.5S2 8 2 12.5 5 17 5 17h2v-2.5s-.25-2 2-2h5s2 .2 2-2V4s.5-2-4-2zm-1.5 2a1 1 0 110 2 1 1 0 010-2z" fill="var(--accent-cyan)" stroke="none"/>
+                    <path d="M12 22c4.5 0 4.5-2 4.5-2v-3H12v-1.5h6.5S22 16 22 11.5 19 7 19 7h-2v2.5s.25 2-2 2h-5s-2-.2-2 2V20s-.5 2 4 2zm1.5-2a1 1 0 110-2 1 1 0 010 2z" fill="var(--accent-purple)" stroke="none"/>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">Python</h4>
+                  <span class="skill-tag">Primary Weapon</span>
+                </div>
+                <div class="skill-percentage">88%</div>
+              </div>
+              <p class="skill-brief">Advanced syntax, OOP, libraries, data processing, scripting, and automation.</p>
+              <div class="progress-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Python proficiency">
+                <div class="progress-bar-fill" style="--target-width: 88%;"></div>
+              </div>
+            </div>
+
+            <!-- Data Structures & Algorithms -->
+            <div class="power-card" data-level="82">
+              <div class="card-glow-bg"></div>
+              <div class="card-top">
+                <div class="skill-icon-box">
+                  <!-- DSA Tree/Graph SVG -->
+                  <svg viewBox="0 0 24 24" class="skill-svg" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <circle cx="12" cy="4" r="3" stroke="var(--accent-cyan)"/>
+                    <circle cx="5" cy="18" r="3" stroke="var(--accent-purple)"/>
+                    <circle cx="19" cy="18" r="3" stroke="var(--accent-pink)"/>
+                    <line x1="10" y1="6.5" x2="6.5" y2="15.5" stroke="currentColor"/>
+                    <line x1="14" y1="6.5" x2="17.5" y2="15.5" stroke="currentColor"/>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">DSA (Python)</h4>
+                  <span class="skill-tag">Competitive</span>
+                </div>
+                <div class="skill-percentage">82%</div>
+              </div>
+              <p class="skill-brief">Trees, graphs, recursion, searching, sorting, hashing, and complexity analysis.</p>
+              <div class="progress-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="DSA proficiency">
+                <div class="progress-bar-fill" style="--target-width: 82%;"></div>
+              </div>
+            </div>
+
+            <!-- C Language -->
+            <div class="power-card" data-level="76">
+              <div class="card-glow-bg"></div>
+              <div class="card-top">
+                <div class="skill-icon-box">
+                  <!-- C SVG -->
+                  <svg viewBox="0 0 24 24" class="skill-svg" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <circle cx="12" cy="12" r="9" stroke="var(--accent-cyan)"/>
+                    <path d="M15 9a4.5 4.5 0 1 0 0 6" stroke="var(--text-primary)" stroke-width="2.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">C Language</h4>
+                  <span class="skill-tag">Low-Level</span>
+                </div>
+                <div class="skill-percentage">76%</div>
+              </div>
+              <p class="skill-brief">Pointers, memory structures, standard library routines, system architecture basics.</p>
+              <div class="progress-track" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100" aria-label="C Language proficiency">
+                <div class="progress-bar-fill" style="--target-width: 76%;"></div>
+              </div>
+            </div>
+
+            <!-- Java -->
+            <div class="power-card" data-level="74">
+              <div class="card-glow-bg"></div>
+              <div class="card-top">
+                <div class="skill-icon-box">
+                  <!-- Java Coffee SVG -->
+                  <svg viewBox="0 0 24 24" class="skill-svg" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M18 8h1a4 4 0 0 1 0 8h-1" stroke="var(--accent-pink)"/>
+                    <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" stroke="var(--accent-cyan)"/>
+                    <line x1="6" y1="2" x2="6" y2="4" stroke="var(--accent-purple)"/>
+                    <line x1="10" y1="2" x2="10" y2="4" stroke="var(--accent-purple)"/>
+                    <line x1="14" y1="2" x2="14" y2="4" stroke="var(--accent-purple)"/>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">Java</h4>
+                  <span class="skill-tag">OOP / Enterprise</span>
+                </div>
+                <div class="skill-percentage">74%</div>
+              </div>
+              <p class="skill-brief">Class hierarchies, interfaces, polymorphism, Java collections framework fundamentals.</p>
+              <div class="progress-track" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" aria-label="Java proficiency">
+                <div class="progress-bar-fill" style="--target-width: 74%;"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Group 2: Data & Storage -->
+        <div class="skill-category-group scroll-reveal">
+          <div class="category-header">
+            <span class="category-indicator"></span>
+            <h3 class="category-title">02. Data Engineering &amp; Databases</h3>
+          </div>
+          <div class="power-cards-grid">
+
+            <!-- DBMS -->
+            <div class="power-card" data-level="80">
+              <div class="card-glow-bg"></div>
+              <div class="card-top">
+                <div class="skill-icon-box">
+                  <!-- DBMS Cylinder SVG -->
+                  <svg viewBox="0 0 24 24" class="skill-svg" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <ellipse cx="12" cy="5" rx="9" ry="3" stroke="var(--accent-cyan)"/>
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" stroke="var(--accent-purple)"/>
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" stroke="currentColor"/>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">DBMS</h4>
+                  <span class="skill-tag">Architecture</span>
+                </div>
+                <div class="skill-percentage">80%</div>
+              </div>
+              <p class="skill-brief">Relational schema design, ACID properties, normalization, indexing, transaction logs.</p>
+              <div class="progress-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="DBMS proficiency">
+                <div class="progress-bar-fill" style="--target-width: 80%;"></div>
+              </div>
+            </div>
+
+            <!-- MySQL -->
+            <div class="power-card" data-level="78">
+              <div class="card-glow-bg"></div>
+              <div class="card-top">
+                <div class="skill-icon-box">
+                  <!-- SQL Query Grid SVG -->
+                  <svg viewBox="0 0 24 24" class="skill-svg" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="3" y="3" width="18" height="18" rx="2" stroke="var(--accent-cyan)"/>
+                    <line x1="3" y1="9" x2="21" y2="9" stroke="var(--accent-cyan)"/>
+                    <line x1="9" y1="21" x2="9" y2="9" stroke="var(--accent-purple)"/>
+                    <circle cx="6" cy="6" r="1" fill="var(--accent-pink)"/>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">MySQL / SQL Server</h4>
+                  <span class="skill-tag">Querying</span>
+                </div>
+                <div class="skill-percentage">78%</div>
+              </div>
+              <p class="skill-brief">Complex joins, subqueries, aggregation, stored procedures, constraints, and optimization.</p>
+              <div class="progress-track" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="MySQL proficiency">
+                <div class="progress-bar-fill" style="--target-width: 78%;"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Group 3: Web Systems -->
+        <div class="skill-category-group scroll-reveal">
+          <div class="category-header">
+            <span class="category-indicator"></span>
+            <h3 class="category-title">03. Web Development</h3>
+          </div>
+          <div class="power-cards-grid">
+
+            <!-- HTML5 -->
+            <div class="power-card" data-level="86">
+              <div class="card-glow-bg"></div>
+              <div class="card-top">
+                <div class="skill-icon-box">
+                  <svg viewBox="0 0 24 24" class="skill-svg" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M4 3l1.8 17 6.2 2 6.2-2L20 3H4z" stroke="var(--accent-pink)"/>
+                    <path d="M12 6v13.5l4.5-1.5 1.2-12H12z" fill="var(--accent-pink)" opacity="0.2"/>
+                    <path d="M8 8h8M8 12h7M9 16l3 1 3-1" stroke="currentColor"/>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">HTML5</h4>
+                  <span class="skill-tag">Structure &amp; Semantics</span>
+                </div>
+                <div class="skill-percentage">86%</div>
+              </div>
+              <p class="skill-brief">Semantic page layout, accessibility (a11y), clean DOM structure, and SEO standards.</p>
+              <div class="progress-track" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 proficiency">
+                <div class="progress-bar-fill" style="--target-width: 86%;"></div>
+              </div>
+            </div>
+
+            <!-- CSS3 -->
+            <div class="power-card" data-level="82">
+              <div class="card-glow-bg"></div>
+              <div class="card-top">
+                <div class="skill-icon-box">
+                  <svg viewBox="0 0 24 24" class="skill-svg" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M4 3l1.8 17 6.2 2 6.2-2L20 3H4z" stroke="var(--accent-cyan)"/>
+                    <path d="M12 6v13.5l4.5-1.5 1.2-12H12z" fill="var(--accent-cyan)" opacity="0.2"/>
+                    <circle cx="12" cy="11" r="3" stroke="var(--accent-purple)"/>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">CSS3 / Modern Styling</h4>
+                  <span class="skill-tag">Design &amp; Motion</span>
+                </div>
+                <div class="skill-percentage">82%</div>
+              </div>
+              <p class="skill-brief">CSS Grid, Flexbox, responsive viewports, CSS custom properties, and keyframe animations.</p>
+              <div class="progress-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="CSS3 proficiency">
+                <div class="progress-bar-fill" style="--target-width: 82%;"></div>
+              </div>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="power-card" data-level="76">
+              <div class="card-glow-bg"></div>
+              <div class="card-top">
+                <div class="skill-icon-box">
+                  <svg viewBox="0 0 24 24" class="skill-svg" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="3" y="3" width="18" height="18" rx="3" stroke="var(--accent-cyan)"/>
+                    <path d="M9 16c0 1.1-.9 2-2 2-1 0-1.7-.5-2-1" stroke="currentColor" stroke-linecap="round"/>
+                    <path d="M14 17c1 1 2.5 1 3.5 0s.5-2.2-.8-2.8l-1.4-.6c-1.3-.6-1.8-1.7-.8-2.8s2.5-1 3.5 0" stroke="currentColor" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">JavaScript (ES6+)</h4>
+                  <span class="skill-tag">Frontend Logic</span>
+                </div>
+                <div class="skill-percentage">76%</div>
+              </div>
+              <p class="skill-brief">DOM manipulation, asynchronous events, Fetch API, Canvas 2D API, state management.</p>
+              <div class="progress-track" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript proficiency">
+                <div class="progress-bar-fill" style="--target-width: 76%;"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Group 4: Tools & Professional Competencies -->
+        <div class="skill-category-group scroll-reveal">
+          <div class="category-header">
+            <span class="category-indicator"></span>
+            <h3 class="category-title">04. Tools &amp; Interpersonal Superpowers</h3>
+          </div>
+          <div class="power-cards-grid">
+
+            <!-- VS Code -->
+            <div class="power-card" data-level="86">
+              <div class="card-glow-bg"></div>
+              <div class="card-top">
+                <div class="skill-icon-box">
+                  <svg viewBox="0 0 24 24" class="skill-svg" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M17 3l4.5 3.5-4.5 3.5" stroke="var(--accent-cyan)"/>
+                    <path d="M17 14l4.5 3.5-4.5 3.5" stroke="var(--accent-cyan)"/>
+                    <path d="M2.5 7.5L8 12l-5.5 4.5" stroke="var(--accent-purple)"/>
+                    <path d="M17 3v18L8 12l9-9z" stroke="currentColor"/>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">VS Code / Git Workflows</h4>
+                  <span class="skill-tag">IDE &amp; Tooling</span>
+                </div>
+                <div class="skill-percentage">86%</div>
+              </div>
+              <p class="skill-brief">Debugging, environment setup, extensions, integrated terminal, and version control.</p>
+              <div class="progress-track" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100" aria-label="VS Code proficiency">
+                <div class="progress-bar-fill" style="--target-width: 86%;"></div>
+              </div>
+            </div>
+
+            <!-- Communication -->
+            <div class="power-card" data-level="84">
+              <div class="card-glow-bg"></div>
+              <div class="card-top">
+                <div class="skill-icon-box">
+                  <svg viewBox="0 0 24 24" class="skill-svg" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="var(--accent-cyan)"/>
+                    <line x1="8" y1="9" x2="16" y2="9" stroke="var(--accent-purple)"/>
+                    <line x1="8" y1="13" x2="13" y2="13" stroke="var(--accent-purple)"/>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">Technical Communication</h4>
+                  <span class="skill-tag">Soft Skill</span>
+                </div>
+                <div class="skill-percentage">84%</div>
+              </div>
+              <p class="skill-brief">Articulating engineering logic, cross-functional collaboration, and clear documentation.</p>
+              <div class="progress-track" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100" aria-label="Communication proficiency">
+                <div class="progress-bar-fill" style="--target-width: 84%;"></div>
+              </div>
+            </div>
+
+            <!-- Presentation -->
+            <div class="power-card" data-level="80">
+              <div class="card-glow-bg"></div>
+              <div class="card-top">
+                <div class="skill-icon-box">
+                  <svg viewBox="0 0 24 24" class="skill-svg" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="2" y="3" width="20" height="14" rx="2" stroke="var(--accent-pink)"/>
+                    <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor"/>
+                    <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor"/>
+                    <path d="M7 10l3-3 2 2 4-4" stroke="var(--accent-cyan)"/>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">Presentation &amp; Demos</h4>
+                  <span class="skill-tag">Soft Skill</span>
+                </div>
+                <div class="skill-percentage">80%</div>
+              </div>
+              <p class="skill-brief">Structuring technical demonstrations, slide walkthroughs, and communicating project value.</p>
+              <div class="progress-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Presentation proficiency">
+                <div class="progress-bar-fill" style="--target-width: 80%;"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS & ACHIEVEMENTS SECTION -->
+    <section id="projects" class="section projects-section" aria-labelledby="projects-heading">
+      <div class="section-container">
+        <div class="section-header scroll-reveal">
+          <div class="section-tag">
+            <span class="tag-bracket">&lt;</span>03 // ARTIFACTS<span class="tag-bracket">&gt;</span>
+          </div>
+          <h2 id="projects-heading" class="section-title">PROJECTS &amp; ACHIEVEMENTS</h2>
+          <p class="section-subtitle">
+            Functional systems built with clean logic, practical utility, and measurable competitive excellence.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Credit Card Approval Prediction System -->
+          <article class="project-card tilt-card scroll-reveal" data-tilt>
+            <div class="card-border-glow"></div>
+            <div class="project-inner">
+              <div class="project-header">
+                <div class="project-badge">SYSTEM 01</div>
+                <div class="project-status">COMPLETED</div>
+              </div>
+
+              <h3 class="project-title">Credit Card Approval Prediction System</h3>
+              <div class="project-description">
+                <ul class="project-bullets">
+                  <li>Built a system to process applicant data and predict credit card approval outcomes using Python for the backend logic.</li>
+                  <li>Designed the front-end interface with HTML and JavaScript and used SQLite for persistent data storage.</li>
+                  <li>Implemented data validation and structured input handling to simulate a real-world approval workflow.</li>
+                </ul>
+              </div>
+
+              <div class="tech-tags-list">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">Data Validation</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://github.com/NARASIMHA5182/CreditCardApproval" target="_blank" rel="noopener noreferrer" class="btn btn-project" aria-label="View Credit Card Approval Prediction System on GitHub">
+                  <span>View on GitHub</span>
+                  <svg viewBox="0 0 24 24" class="btn-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: College Hostel Management System -->
+          <article class="project-card tilt-card scroll-reveal" data-tilt>
+            <div class="card-border-glow"></div>
+            <div class="project-inner">
+              <div class="project-header">
+                <div class="project-badge">SYSTEM 02</div>
+                <div class="project-status">COMPLETED</div>
+              </div>
+
+              <h3 class="project-title">College Hostel Management System</h3>
+              <div class="project-description">
+                <ul class="project-bullets">
+                  <li>Developed a hostel management application with Streamlit for an interactive, web-based user interface.</li>
+                  <li>Designed and integrated an SQL Server database to manage student, room, and allocation records.</li>
+                  <li>Built modules for record management to streamline day-to-day hostel administration tasks.</li>
+                </ul>
+              </div>
+
+              <div class="tech-tags-list">
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">SQL Server</span>
+                <span class="tech-tag">Database Integration</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://github.com/NARASIMHA5182" target="_blank" rel="noopener noreferrer" class="btn btn-project" aria-label="View College Hostel Management System on GitHub">
+                  <span>View on GitHub</span>
+                  <svg viewBox="0 0 24 24" class="btn-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: BuildConnect -->
+          <article class="project-card tilt-card scroll-reveal" data-tilt>
+            <div class="card-border-glow"></div>
+            <div class="project-inner">
+              <div class="project-header">
+                <div class="project-badge">SYSTEM 03</div>
+                <div class="project-status">FEATURED</div>
+              </div>
+
+              <h3 class="project-title">BuildConnect</h3>
+              <p class="project-description">
+                A localized marketplace connecting clients with skilled construction workers (electricians, plumbers, carpenters, site supervisors) filtered by city. Equipped with an administrative control panel, manpower scheduling, and budget estimation engines.
+              </p>
+
+              <div class="tech-tags-list">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Web Portal</span>
+                <span class="tech-tag">Database Arch</span>
+                <span class="tech-tag">Admin Panel</span>
+                <span class="tech-tag">Cost Estimator</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://github.com/NARASIMHA5182" target="_blank" rel="noopener noreferrer" class="btn btn-project" aria-label="View BuildConnect on GitHub">
+                  <span>View on GitHub</span>
+                  <svg viewBox="0 0 24 24" class="btn-icon" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Achievement Card 4: Stage 2 ATF Exam -->
+          <article class="project-card achievement-card tilt-card scroll-reveal" data-tilt>
+            <div class="card-border-glow"></div>
+            <div class="project-inner">
+              <div class="project-header">
+                <div class="project-badge achievement-badge">
+                  <span class="trophy-emoji">🏆</span> COMPETITIVE ACHIEVEMENT
+                </div>
+                <div class="project-status status-verified">VERIFIED 2025</div>
+              </div>
+
+              <h3 class="project-title achievement-title">Stage 2 Qualifier: ATF Coding Exam</h3>
+              <p class="project-description">
+                Demonstrated high-tier algorithmic proficiency by clearing Stage 1 and advancing to <strong>Stage 2 of the nationwide ATF (Amphisoft Talent Fest) Competitive Coding Exam (2025)</strong>, solving time-constrained algorithmic challenges with optimal space and time complexities.
+              </p>
+
+              <div class="tech-tags-list">
+                <span class="tech-tag highlight">Competitive Coding</span>
+                <span class="tech-tag highlight">Data Structures</span>
+                <span class="tech-tag highlight">Algorithm Optimization</span>
+                <span class="tech-tag highlight">Stage 2 Finalist</span>
+              </div>
+
+              <div class="project-footer">
+                <div class="achievement-meta">
+                  <span class="meta-label">DISCIPLINE:</span>
+                  <span class="meta-val">Advanced Problem Solving in Python</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+      <div class="section-container">
+        <div class="section-header scroll-reveal">
+          <div class="section-tag">
+            <span class="tag-bracket">&lt;</span>04 // TRANSMISSION<span class="tag-bracket">&gt;</span>
+          </div>
+          <h2 id="contact-heading" class="section-title">CONNECT WITH ME</h2>
+          <p class="section-subtitle">
+            Ready to collaborate on AI engineering, algorithmic challenges, or innovative software projects.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-card scroll-reveal">
+          <div class="contact-card-glow"></div>
+          <div class="contact-grid">
+
+            <!-- Direct Contact Info -->
+            <div class="contact-info-col">
+              <div class="transmission-status">
+                <span class="signal-dot"></span>
+                <span>NEURAL TRANSMISSION CHANNELS OPEN</span>
+              </div>
+              <h3 class="contact-subhead">Let's Build Something Exceptional</h3>
+              <p class="contact-desc">
+                Whether you have an internship opportunity, a project collaboration, or want to discuss machine learning architectures and Python DSA, my inbox is always open.
+              </p>
+
+              <!-- Contact Channels List -->
+              <div class="channels-list">
+                <!-- Email -->
+                <div class="channel-item">
+                  <div class="channel-icon-wrap">
+                    <svg viewBox="0 0 24 24" class="channel-svg" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </svg>
+                  </div>
+                  <div class="channel-content">
+                    <span class="channel-label">EMAIL DIRECT</span>
+                    <a href="mailto:kodurivenkatanarasimhareddy@gmail.com" class="channel-link">
+                      kodurivenkatanarasimhareddy@gmail.com
+                    </a>
+                  </div>
+                </div>
+
+                <!-- GitHub -->
+                <div class="channel-item">
+                  <div class="channel-icon-wrap">
+                    <svg viewBox="0 0 24 24" class="channel-svg" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </div>
+                  <div class="channel-content">
+                    <span class="channel-label">GITHUB REPOSITORIES</span>
+                    <a href="https://github.com/NARASIMHA5182" target="_blank" rel="noopener noreferrer" class="channel-link">
+                      github.com/NARASIMHA5182
+                    </a>
+                  </div>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class="channel-item">
+                  <div class="channel-icon-wrap">
+                    <svg viewBox="0 0 24 24" class="channel-svg" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                      <rect x="2" y="9" width="4" height="12"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                  </div>
+                  <div class="channel-content">
+                    <span class="channel-label">LINKEDIN PROFILE</span>
+                    <a href="https://www.linkedin.com/in/venkata-narasimha-reddy-koduri-115680338/" target="_blank" rel="noopener noreferrer" class="channel-link">
+                      linkedin.com/in/venkata-narasimha-reddy-koduri-115680338
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Copy Button -->
+              <div class="copy-email-box">
+                <button id="copy-email-btn" class="btn btn-outline" data-email="kodurivenkatanarasimhareddy@gmail.com">
+                  <svg viewBox="0 0 24 24" class="btn-icon" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span id="copy-btn-text">Copy Email Address</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Interactive Quick Message Terminal Form -->
+            <div class="contact-form-col">
+              <form class="cyber-form" id="quick-contact-form" onsubmit="return false;">
+                <div class="form-header">
+                  <span class="terminal-dot dot-red"></span>
+                  <span class="terminal-dot dot-yellow"></span>
+                  <span class="terminal-dot dot-green"></span>
+                  <span class="form-title">ENCRYPTED_MESSAGE_DISPATCH</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-name" class="form-label">IDENTIFIER / NAME</label>
+                  <input type="text" id="sender-name" class="form-input" placeholder="e.g. Ada Lovelace" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-email" class="form-label">RETURN ADDRESS / EMAIL</label>
+                  <input type="email" id="sender-email" class="form-input" placeholder="e.g. ada@neural.dev" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="sender-message" class="form-label">PAYLOAD / MESSAGE</label>
+                  <textarea id="sender-message" class="form-textarea" rows="4" placeholder="Type your message or project inquiry here..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary form-submit-btn" id="send-msg-btn">
+                  <span>Transmit Transmission</span>
+                  <svg viewBox="0 0 24 24" class="btn-icon" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+
+                <div id="form-feedback" class="form-feedback-msg" aria-live="polite"></div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">KVNR</span>
+        <span class="logo-accent">.ai</span>
+        <span class="logo-bracket">/&gt;</span>
+      </div>
+
+      <p class="footer-challenge">
+        Built for the AWS Student Builder Challenge ⚡
+      </p>
+
+      <div class="footer-links">
+        <a href="#about" class="footer-link">About</a>
+        <span class="footer-sep">•</span>
+        <a href="#skills" class="footer-link">Skills</a>
+        <span class="footer-sep">•</span>
+        <a href="#projects" class="footer-link">Projects</a>
+        <span class="footer-sep">•</span>
+        <a href="#contact" class="footer-link">Contact</a>
+      </div>
+
+      <p class="footer-copyright">
+        © 2026 Koduri Venkata Narasimha Reddy. Static &amp; Framework-Free. Deployed with AWS Amplify.
+      </p>
+    </div>
+  </footer>
+
+  <!-- FIXED FLOATING AI TERMINAL TRIGGER (FOR ACCESSIBILITY & MOBILE) -->
+  <div class="fixed-terminal-trigger">
+    <button id="floating-terminal-btn" class="floating-terminal-pill" aria-label="Open AI Terminal Console" title="Open AI Terminal (Press ~ or click)">
+      <span class="pill-pulse"></span>
+      <span class="pill-icon">⌨</span>
+      <span class="pill-text">Open AI Terminal</span>
+    </button>
+  </div>
+
+  <!-- FULL INTERACTIVE RESUME / CV MODAL -->
+  <div id="resume-modal" class="resume-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="resume-doc-title" aria-hidden="true">
+    <div class="resume-modal-backdrop" id="resume-modal-backdrop"></div>
+    <div class="resume-modal-content">
+      <!-- Modal Top Navigation Bar -->
+      <div class="resume-modal-header">
+        <div class="resume-modal-header-left">
+          <span class="terminal-dot dot-red"></span>
+          <span class="terminal-dot dot-yellow"></span>
+          <span class="terminal-dot dot-green"></span>
+          <span class="resume-modal-title" id="resume-doc-title">CURRICULUM VITAE // VENKATA NARASIMHA REDDY KODURI</span>
+        </div>
+        <div class="resume-modal-actions">
+          <a href="resume.pdf" download="KVNR_Resume.pdf" class="btn btn-outline btn-sm">
+            <span>📥 Download PDF</span>
+          </a>
+          <button type="button" class="resume-modal-close" id="resume-close-btn" aria-label="Close Resume Modal">✕</button>
+        </div>
+      </div>
+
+      <!-- Scrollable Resume Body Document -->
+      <div class="resume-modal-body">
+        <div class="resume-paper">
+
+          <!-- Resume Header -->
+          <div class="cv-header">
+            <h2 class="cv-name">VENKATA NARASIMHA REDDY KODURI</h2>
+            <div class="cv-contact-line">
+              <span>📍 Gudlavalleru, Andhra Pradesh, India</span>
+              <span class="cv-sep">•</span>
+              <a href="mailto:kodurivenkatanarasimhareddy@gmail.com" class="cv-link">kodurivenkatanarasimhareddy@gmail.com</a>
+              <span class="cv-sep">•</span>
+              <a href="https://www.linkedin.com/in/venkata-narasimha-reddykoduri-115680338" target="_blank" rel="noopener noreferrer" class="cv-link">LinkedIn Profile</a>
+              <span class="cv-sep">•</span>
+              <a href="https://github.com/NARASIMHA5182" target="_blank" rel="noopener noreferrer" class="cv-link">GitHub @NARASIMHA5182</a>
+            </div>
+          </div>
+
+          <!-- Section: Objective -->
+          <div class="cv-section">
+            <h3 class="cv-section-title">OBJECTIVE</h3>
+            <div class="cv-section-rule"></div>
+            <p class="cv-text">
+              Third-year Computer Science (CSE) undergraduate building a strong foundation in Python, data structures, and applied software development, with a focused long-term goal of working in artificial intelligence / machine learning. Seeking internship and project opportunities to apply programming and problem-solving skills to real-world systems.
+            </p>
+          </div>
+
+          <!-- Section: Education -->
+          <div class="cv-section">
+            <h3 class="cv-section-title">EDUCATION</h3>
+            <div class="cv-section-rule"></div>
+            <div class="cv-entry">
+              <div class="cv-entry-head">
+                <span class="cv-role">B.Tech, Computer Science and Engineering</span>
+                <span class="cv-period">Expected Graduation: 2027</span>
+              </div>
+              <div class="cv-institution">Seshadri Rao Gudlavalleru Engineering College, Gudlavalleru, Andhra Pradesh</div>
+              <div class="cv-meta-note">Currently in 3rd Year</div>
+            </div>
+          </div>
+
+          <!-- Section: Technical Skills -->
+          <div class="cv-section">
+            <h3 class="cv-section-title">TECHNICAL SKILLS</h3>
+            <div class="cv-section-rule"></div>
+            <div class="cv-skills-grid">
+              <div class="cv-skill-row">
+                <span class="cv-skill-cat">Programming Languages:</span>
+                <span class="cv-skill-items">Python, C, Java</span>
+              </div>
+              <div class="cv-skill-row">
+                <span class="cv-skill-cat">Web Technologies:</span>
+                <span class="cv-skill-items">HTML, CSS, JavaScript</span>
+              </div>
+              <div class="cv-skill-row">
+                <span class="cv-skill-cat">Databases:</span>
+                <span class="cv-skill-items">MySQL, SQL Server, SQLite, DBMS Concepts</span>
+              </div>
+              <div class="cv-skill-row">
+                <span class="cv-skill-cat">Tools &amp; Frameworks:</span>
+                <span class="cv-skill-items">VS Code, Streamlit, Git</span>
+              </div>
+              <div class="cv-skill-row">
+                <span class="cv-skill-cat">Currently Learning:</span>
+                <span class="cv-skill-items highlight-green">Data Structures and Algorithms (Python) ⚡</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: Projects -->
+          <div class="cv-section">
+            <h3 class="cv-section-title">PROJECTS</h3>
+            <div class="cv-section-rule"></div>
+
+            <!-- Project 1 -->
+            <div class="cv-entry">
+              <div class="cv-entry-head">
+                <span class="cv-role">Credit Card Approval Prediction System</span>
+                <span class="cv-tools">Python, HTML, JavaScript, SQLite</span>
+              </div>
+              <div class="cv-link-sub">
+                GitHub: <a href="https://github.com/NARASIMHA5182/CreditCardApproval" target="_blank" rel="noopener noreferrer" class="cv-link">github.com/NARASIMHA5182/CreditCardApproval</a>
+              </div>
+              <ul class="cv-bullets">
+                <li>Built a system to process applicant data and predict credit card approval outcomes using Python for the backend logic.</li>
+                <li>Designed the front-end interface with HTML and JavaScript and used SQLite for persistent data storage.</li>
+                <li>Implemented data validation and structured input handling to simulate a real-world approval workflow.</li>
+              </ul>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="cv-entry">
+              <div class="cv-entry-head">
+                <span class="cv-role">College Hostel Management System</span>
+                <span class="cv-tools">Python, Streamlit, SQL Server</span>
+              </div>
+              <ul class="cv-bullets">
+                <li>Developed a hostel management application with Streamlit for an interactive, web-based user interface.</li>
+                <li>Designed and integrated an SQL Server database to manage student, room, and allocation records.</li>
+                <li>Built modules for record management to streamline day-to-day hostel administration tasks.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Section: Certifications & Achievements -->
+          <div class="cv-section">
+            <h3 class="cv-section-title">CERTIFICATIONS &amp; ACHIEVEMENTS</h3>
+            <div class="cv-section-rule"></div>
+            <ul class="cv-bullets">
+              <li><strong>ATF 2025 (All India Talent/Coding Examination)</strong> – Qualified to Stage 2</li>
+            </ul>
+          </div>
+
+          <!-- Section: Additional Skills -->
+          <div class="cv-section">
+            <h3 class="cv-section-title">ADDITIONAL SKILLS</h3>
+            <div class="cv-section-rule"></div>
+            <div class="cv-pills-row">
+              <span class="cv-pill">Communication Skills</span>
+              <span class="cv-pill">Presentation Skills</span>
+              <span class="cv-pill">Problem Solving &amp; Analytical Thinking</span>
+              <span class="cv-pill">Team Collaboration</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="resume-modal-footer">
+        <span class="footer-note">Full resume formatted directly from verified credentials.</span>
+        <div class="footer-btns">
+          <a href="resume.pdf" target="_blank" class="btn btn-secondary btn-sm">Open PDF in New Tab</a>
+          <a href="resume.pdf" download="KVNR_Resume.pdf" class="btn btn-primary btn-sm">Download Resume (PDF)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE "WAKE THE AI" TERMINAL MODAL -->
+  <div id="terminal-modal" class="terminal-overlay" role="dialog" aria-modal="true" aria-labelledby="terminal-title" aria-hidden="true">
+    <div class="terminal-backdrop" id="terminal-backdrop"></div>
+    <div class="terminal-window" id="terminal-window">
+      <!-- CRT Screen lines & scanline effects -->
+      <div class="crt-scanlines" aria-hidden="true"></div>
+      <div class="crt-glow" aria-hidden="true"></div>
+
+      <!-- Terminal Top Bar -->
+      <div class="terminal-header">
+        <div class="terminal-controls">
+          <button class="terminal-btn btn-close" id="terminal-close-btn" aria-label="Close terminal" title="Close (Esc)">✕</button>
+          <span class="terminal-btn btn-minimize" aria-hidden="true">−</span>
+          <span class="terminal-btn btn-maximize" aria-hidden="true">+</span>
+        </div>
+        <div class="terminal-title" id="terminal-title">
+          <span class="terminal-prompt-sym">kvnr@neural-lab</span>:<span class="terminal-dir">~/core</span>$ [AI_CONSOLE_v2.5]
+        </div>
+        <div class="terminal-meta-status">
+          <span class="core-status-beacon"></span> ONLINE
+        </div>
+      </div>
+
+      <!-- Matrix Canvas for 'matrix' command inside terminal -->
+      <canvas id="terminal-matrix-canvas" class="terminal-matrix" aria-hidden="true"></canvas>
+
+      <!-- Terminal Output Screen -->
+      <div class="terminal-body" id="terminal-body" tabindex="0" role="region" aria-label="Terminal output stream">
+        <div id="terminal-output" class="terminal-output">
+          <!-- Boot sequence & interactive output appended dynamically -->
+        </div>
+
+        <!-- Active Input Line -->
+        <div class="terminal-input-row" id="terminal-input-container">
+          <span class="terminal-user-prefix">visitor@kvnr-ai:~$</span>
+          <input type="text" id="terminal-input" class="terminal-command-input" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" aria-label="Terminal command prompt">
+        </div>
+      </div>
+
+      <!-- Terminal Footer Bar with Quick Tips -->
+      <div class="terminal-footer">
+        <span class="footer-tip">Commands: <code>help</code>, <code>about</code>, <code>skills</code>, <code>projects</code>, <code>contact</code>, <code>fun-fact</code>, <code>joke</code>, <code>theme</code>, <code>matrix</code>, <code>secret</code>, <code>clear</code>, <code>exit</code></span>
+        <span class="footer-keys">Press <kbd>Esc</kbd> to exit | <kbd>Tab</kbd> to autocomplete | <kbd>↑</kbd><kbd>↓</kbd> for history</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
